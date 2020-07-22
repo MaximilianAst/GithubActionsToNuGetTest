@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>MyTestClassLibrary</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>MyTestClassLibrary</Authors>
+    <Company>MyTestClassLibrary</Company>
+    <Version>1.0.0-dev01</Version>
+    <PackageId>MyTestClassLibrary</PackageId>
+    <Product>MyTestClassLibrary</Product>
+    <RootNamespace>MyTestClassLibrary</RootNamespace>
+  </PropertyGroup>
+
+</Project>
