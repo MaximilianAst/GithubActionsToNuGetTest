@@ -1,0 +1,25 @@
+name: .NET Core
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.301
+    - name: Install dependencies
+      run: dotnet restore TotallyJustATest.sln
+    - name: Build
+      run: dotnet build --configuration Release --no-restore TotallyJustATest.sln
+    - name: Publish NuPkg
+      run: dotnet nuget push "src/MyTestClassLibary/bin/Release/MyTestClassLibrary.1.0.0-dev01.nupkg" --source "github"
