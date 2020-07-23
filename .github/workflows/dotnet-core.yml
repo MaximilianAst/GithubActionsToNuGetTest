@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 3.1.301
         
     - name: SetupNuget
-      run: dotnet nuget add source  "https://nuget.pkg.github.com/MaximilianAst/index.json" --name "GitHub" -UserName maximilianast -Password ${{ secrets.GITHUB_TOKEN }}
+      run: dotnet nuget add source  "https://nuget.pkg.github.com/MaximilianAst/index.json" --name "GitHub" --username maximilianast --password ${{ secrets.GITHUB_TOKEN }}
     - name: Install dependencies
       run: dotnet restore TotallyJustATest.sln
     - name: Build
