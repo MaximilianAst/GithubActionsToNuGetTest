@@ -25,5 +25,5 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore TotallyJustATest.sln
     - name: Publish NuPkg
-      run: dotnet nuget push "src/MyTestClassLibary/bin/Release/MyTestClassLibrary.1.0.0-dev01.nupkg" --source GitHub --skip-duplicate
+      run: dotnet nuget push "src/MyTestClassLibary/bin/Release/MyTestClassLibrary.*.nupkg" --source GitHub --skip-duplicate
  
