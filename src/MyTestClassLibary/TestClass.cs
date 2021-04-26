@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MyTestClassLibrary
+﻿namespace MaximilianAst.MyTestClassLibrary
 {
     public static class TestClass
     {
