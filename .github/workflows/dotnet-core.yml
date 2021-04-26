@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.1.x'
+        dotnet-version: '5.0.x'
         
     - name: SetupNuget
       run: dotnet nuget add source  "https://nuget.pkg.github.com/MaximilianAst/index.json" --name "GitHub" --username maximilianast --store-password-in-clear-text --password ${{ secrets.GITHUB_TOKEN }} 
