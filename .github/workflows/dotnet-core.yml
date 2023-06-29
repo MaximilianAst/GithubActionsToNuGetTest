@@ -3,20 +3,18 @@ name: .NET Core
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+    environment: prod
 
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x'
+        dotnet-version: '6.0.x'
         
     - name: SetupNuget
       run: dotnet nuget add source  "https://nuget.pkg.github.com/MaximilianAst/index.json" --name "GitHub" --username maximilianast --store-password-in-clear-text --password ${{ secrets.GITHUB_TOKEN }} 

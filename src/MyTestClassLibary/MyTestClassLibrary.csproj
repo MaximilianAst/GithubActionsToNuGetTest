@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
     <AssemblyName>MaximilianAst.MyTestClassLibrary</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>MaximilianAst</Authors>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <PackageId>MaximilianAst.MyTestClassLibrary</PackageId>
     <Product>MaximilianAst.MyTestClassLibrary</Product>
     <RootNamespace>MaximilianAst.MyTestClassLibrary</RootNamespace>
